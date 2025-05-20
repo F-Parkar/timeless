@@ -1,0 +1,37 @@
+.spinner-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full viewport height */
+}
+
+.watch-spinner {
+  position: relative;
+  width: 100px;
+  height: 100px;
+}
+
+.spinner-ring {
+  width: 100px;
+  height: 100px;
+  border: 8px solid var(--primary);
+  border-top: 8px solid transparent;
+  border-radius: 50%;
+  animation: spin 1.2s linear infinite;
+  box-sizing: border-box;
+}
+
+.watch-dial {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 40px;
+  height: 40px;
+  transform: translate(-50%, -50%);
+  object-fit: contain;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
