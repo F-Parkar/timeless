@@ -15,8 +15,6 @@ const HomeScreen = () => {
   return (
     <>
       <Meta />
-      
-
       <Container className="fade-in mt-4">
         {keyword && (
           <Link to="/" className="btn btn-outline-primary mb-4">
